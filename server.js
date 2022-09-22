@@ -1,7 +1,8 @@
 const express = require("express");
-
-const app = express();
-const PORT = process.env.PORT || 3000 ; 
+const path = require("path");
+const fs = require("fs");
+const { v4: uuidv4 } = require("uuid");
+var notesDB = require("./db/db.json");
 
 // middleware
 app.use(express.urlencoded({ extended: true }));
