@@ -24,3 +24,16 @@ app.get("/api/notes", (req,res) => { res.json(notesDB)});
 // GET ROUTE FOR FRONTPAGE
 app.get("*", (req, res) => res.sendFile(path.join(__dirname, "./public/index.html")));
 
+
+// POST ROUTE
+app.post("/api/notes", (req, res) => {
+  req.body.id = uuidv4();
+  const newNote = req.body;
+
+  notesDB.push(newNote);
+
+  fs.writeFileSync("./db/db.json", JSON.stringify(notesDB));
+  res.json(notesDB);
+})
+
+app.listen(PORT, () => console.log(`App listening at http://localhost:${PORT}`));
