@@ -11,7 +11,7 @@ Type in the note title and the note itself. Then hit the save button in the righ
 Future development of this project is the deletion of notes.
 
 DEPLOYED LINK
-https://aveheart.github.io/note_taker/
+https://note-taker53.herokuapp.com/
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
