@@ -1,4 +1,4 @@
-# note_taker
+# note taker
 
 ## Description
 This project allows a user to take notes by adding and saving notes.
